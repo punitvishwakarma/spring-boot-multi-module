@@ -1,0 +1,10 @@
+<testsuite failures="0" name="com/tcs/git/zeroFollowers_withParam.feature" skipped="0" tests="1" time="2.641037">
+  <testcase classname="com.tcs.git.zeroFollowers_withParam" name="Testing commas in param values" time="2.641037">
+    <system-out>Given url microserviceUrl ................................................. passed
+And path '/zeroFollowers' ................................................. passed
+And param items = '0,1,3' ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.length() == 3 ................................................. passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-5"},{"id":2,"content":"ForkJoinPool-1-worker-3"},{"id":3,"content":"ForkJoinPool-1-worker-7"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"zeroFollowers_success[1:3]","start":2785,"end":5538,"title":"zeroFollowers_success[1:3] 05:30:02.785-05:30:05.538 Checking response 200"},{"id":2,"group":2,"content":"zeroFollowers_withOutParam[1:3]","start":2784,"end":5461,"title":"zeroFollowers_withOutParam[1:3] 05:30:02.784-05:30:05.461 Checking response contains array value"},{"id":3,"group":3,"content":"zeroFollowers_withParam[1:3]","start":2784,"end":5466,"title":"zeroFollowers_withParam[1:3] 05:30:02.784-05:30:05.466 Testing commas in param values"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

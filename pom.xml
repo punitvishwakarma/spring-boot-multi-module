@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.6.RELEASE</version>
+	</parent>
+	<groupId>com.tcs.git</groupId>
+	<artifactId>spring-boot-multi-module</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>tcs-code-exercise</name>
+	<packaging>pom</packaging>
+
+	<properties>
+		<java.version>11</java.version>
+		<lombok.version>1.18.12</lombok.version>
+		<spring.boot.version>2.2.6.RELEASE</spring.boot.version>
+		<karate.version>0.9.5</karate.version>
+		<surefire.version>2.22.2</surefire.version>
+	</properties>
+
+	<modules>
+		<module>git-microservice</module>
+		<module>git-microservice-test</module>
+	</modules>
+</project>

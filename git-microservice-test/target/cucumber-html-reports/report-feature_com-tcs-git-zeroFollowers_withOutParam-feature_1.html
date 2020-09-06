@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: com/tcs/git/zeroFollowers_withOutParam.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>com.tcs.git</td>
+            <td>06 Sep 2020, 19:06</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">com/tcs/git/zeroFollowers_withOutParam.feature</td>
+                    <td      class="passed"    >5</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">5</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="2639581000">2s 639ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">com/tcs/git/zeroFollowers_withOutParam.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Response Array</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2s 639ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Checking response contains array value</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url microserviceUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path '/zeroFollowers'</span>
+  
+  <span class="lead-duration duration">011ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">2s 613ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:06:38.975 request:
+1 &gt; GET http://localhost:8081/api/v1/git-microservice/zeroFollowers
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:8081
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11)
+
+19:06:40.539 response time in milliseconds: 1559.62
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 06 Sep 2020 13:36:40 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+[{&quot;id&quot;:44,&quot;login&quot;:&quot;errfree&quot;,&quot;html_url&quot;:&quot;https://github.com/errfree&quot;},{&quot;id&quot;:81,&quot;login&quot;:&quot;engineyard&quot;,&quot;html_url&quot;:&quot;https://github.com/engineyard&quot;},{&quot;id&quot;:119,&quot;login&quot;:&quot;ministrycentered&quot;,&quot;html_url&quot;:&quot;https://github.com/ministrycentered&quot;},{&quot;id&quot;:128,&quot;login&quot;:&quot;collectiveidea&quot;,&quot;html_url&quot;:&quot;https://github.com/collectiveidea&quot;},{&quot;id&quot;:144,&quot;login&quot;:&quot;ogc&quot;,&quot;html_url&quot;:&quot;https://github.com/ogc&quot;},{&quot;id&quot;:150,&quot;login&quot;:&quot;sevenwire&quot;,&quot;html_url&quot;:&quot;https://github.com/sevenwire&quot;},{&quot;id&quot;:167,&quot;login&quot;:&quot;entryway&quot;,&quot;html_url&quot;:&quot;https://github.com/entryway&quot;},{&quot;id&quot;:264,&quot;login&quot;:&quot;merb&quot;,&quot;html_url&quot;:&quot;https://github.com/merb&quot;},{&quot;id&quot;:359,&quot;login&quot;:&quot;moneyspyder&quot;,&quot;html_url&quot;:&quot;https://github.com/moneyspyder&quot;},{&quot;id&quot;:374,&quot;login&quot;:&quot;sproutit&quot;,&quot;html_url&quot;:&quot;https://github.com/sproutit&quot;},{&quot;id&quot;:489,&quot;login&quot;:&quot;wrenchlabs&quot;,&quot;html_url&quot;:&quot;https://github.com/wrenchlabs&quot;},{&quot;id&quot;:555,&quot;login&quot;:&quot;ipvideomarketinfo&quot;,&quot;html_url&quot;:&quot;https://github.com/ipvideomarketinfo&quot;},{&quot;id&quot;:49999022,&quot;login&quot;:&quot;dpmex4528&quot;,&quot;html_url&quot;:&quot;https://github.com/dpmex4528&quot;},{&quot;id&quot;:728,&quot;login&quot;:&quot;revelation&quot;,&quot;html_url&quot;:&quot;https://github.com/revelation&quot;},{&quot;id&quot;:1067,&quot;login&quot;:&quot;railslove&quot;,&quot;html_url&quot;:&quot;https://github.com/railslove&quot;},{&quot;id&quot;:1119,&quot;login&quot;:&quot;railsdog&quot;,&quot;html_url&quot;:&quot;https://github.com/railsdog&quot;},{&quot;id&quot;:1146,&quot;login&quot;:&quot;netguru&quot;,&quot;html_url&quot;:&quot;https://github.com/netguru&quot;},{&quot;id&quot;:1190,&quot;login&quot;:&quot;animikii&quot;,&quot;html_url&quot;:&quot;https://github.com/animikii&quot;},{&quot;id&quot;:1375,&quot;login&quot;:&quot;cdr&quot;,&quot;html_url&quot;:&quot;https://github.com/cdr&quot;},{&quot;id&quot;:1511,&quot;login&quot;:&quot;sauspiel&quot;,&quot;html_url&quot;:&quot;https://github.com/sauspiel&quot;},{&quot;id&quot;:1849,&quot;login&quot;:&quot;wherecloud&quot;,&quot;html_url&quot;:&quot;https://github.com/wherecloud&quot;},{&quot;id&quot;:1928,&quot;login&quot;:&quot;triveos&quot;,&quot;html_url&quot;:&quot;https://github.com/triveos&quot;},{&quot;id&quot;:1964,&quot;login&quot;:&quot;lincolnloop&quot;,&quot;html_url&quot;:&quot;https://github.com/lincolnloop&quot;},{&quot;id&quot;:2084,&quot;login&quot;:&quot;notch8&quot;,&quot;html_url&quot;:&quot;https://github.com/notch8&quot;},{&quot;id&quot;:2309,&quot;login&quot;:&quot;edgecase&quot;,&quot;html_url&quot;:&quot;https://github.com/edgecase&quot;},{&quot;id&quot;:2548,&quot;login&quot;:&quot;galaxycats&quot;,&quot;html_url&quot;:&quot;https://github.com/galaxycats&quot;},{&quot;id&quot;:2595,&quot;login&quot;:&quot;standout&quot;,&quot;html_url&quot;:&quot;https://github.com/standout&quot;},{&quot;id&quot;:2705,&quot;login&quot;:&quot;trabian&quot;,&quot;html_url&quot;:&quot;https://github.com/trabian&quot;},{&quot;id&quot;:2842,&quot;login&quot;:&quot;wesabe&quot;,&quot;html_url&quot;:&quot;https://github.com/wesabe&quot;},{&quot;id&quot;:2925,&quot;login&quot;:&quot;orgsync&quot;,&quot;html_url&quot;:&quot;https://github.com/orgsync&quot;},{&quot;id&quot;:3043,&quot;login&quot;:&quot;UntoThisLast&quot;,&quot;html_url&quot;:&quot;https://github.com/UntoThisLast&quot;},{&quot;id&quot;:3286,&quot;login&quot;:&quot;gumgum&quot;,&quot;html_url&quot;:&quot;https://github.com/gumgum&quot;},{&quot;id&quot;:3428,&quot;login&quot;:&quot;caring&quot;,&quot;html_url&quot;:&quot;https://github.com/caring&quot;},{&quot;id&quot;:3452,&quot;login&quot;:&quot;voceconnect&quot;,&quot;html_url&quot;:&quot;https://github.com/voceconnect&quot;},{&quot;id&quot;:3453,&quot;login&quot;:&quot;braintree&quot;,&quot;html_url&quot;:&quot;https://github.com/braintree&quot;},{&quot;id&quot;:3495,&quot;login&quot;:&quot;jiva-technology&quot;,&quot;html_url&quot;:&quot;https://github.com/jiva-technology&quot;},{&quot;id&quot;:3518,&quot;login&quot;:&quot;insightmethods&quot;,&quot;html_url&quot;:&quot;https://github.com/insightmethods&quot;},{&quot;id&quot;:3686,&quot;login&quot;:&quot;squarefactor&quot;,&quot;html_url&quot;:&quot;https://github.com/squarefactor&quot;},{&quot;id&quot;:3747,&quot;login&quot;:&quot;intridea&quot;,&quot;html_url&quot;:&quot;https://github.com/intridea&quot;},{&quot;id&quot;:3883,&quot;login&quot;:&quot;rarepleasures&quot;,&quot;html_url&quot;:&quot;https://github.com/rarepleasures&quot;},{&quot;id&quot;:4075,&quot;login&quot;:&quot;eastmedia&quot;,&quot;html_url&quot;:&quot;https://github.com/eastmedia&quot;},{&quot;id&quot;:4155,&quot;login&quot;:&quot;fivesenses&quot;,&quot;html_url&quot;:&quot;https://github.com/fivesenses&quot;},{&quot;id&quot;:4180,&quot;login&quot;:&quot;Rouxbe&quot;,&quot;html_url&quot;:&quot;https://github.com/Rouxbe&quot;},{&quot;id&quot;:4194,&quot;login&quot;:&quot;xilinus&quot;,&quot;html_url&quot;:&quot;https://github.com/xilinus&quot;},{&quot;id&quot;:4223,&quot;login&quot;:&quot;rails&quot;,&quot;html_url&quot;:&quot;https://github.com/rails&quot;},{&quot;id&quot;:4497,&quot;login&quot;:&quot;railsmachine&quot;,&quot;html_url&quot;:&quot;https://github.com/railsmachine&quot;},{&quot;id&quot;:4720,&quot;login&quot;:&quot;reversetype&quot;,&quot;html_url&quot;:&quot;https://github.com/reversetype&quot;},{&quot;id&quot;:4752,&quot;login&quot;:&quot;survival&quot;,&quot;html_url&quot;:&quot;https://github.com/survival&quot;},{&quot;id&quot;:4845,&quot;login&quot;:&quot;vigetlabs&quot;,&quot;html_url&quot;:&quot;https://github.com/vigetlabs&quot;},{&quot;id&quot;:5027,&quot;login&quot;:&quot;softa&quot;,&quot;html_url&quot;:&quot;https://github.com/softa&quot;},{&quot;id&quot;:5073,&quot;login&quot;:&quot;papercreatures&quot;,&quot;html_url&quot;:&quot;https://github.com/papercreatures&quot;},{&quot;id&quot;:5137,&quot;login&quot;:&quot;warhorn&quot;,&quot;html_url&quot;:&quot;https://github.com/warhorn&quot;},{&quot;id&quot;:5146,&quot;login&quot;:&quot;wisdomgroup&quot;,&quot;html_url&quot;:&quot;https://github.com/wisdomgroup&quot;},{&quot;id&quot;:5237,&quot;login&quot;:&quot;yood&quot;,&quot;html_url&quot;:&quot;https://github.com/yood&quot;},{&quot;id&quot;:5558,&quot;login&quot;:&quot;rubaidh&quot;,&quot;html_url&quot;:&quot;https://github.com/rubaidh&quot;},{&quot;id&quot;:5576,&quot;login&quot;:&quot;beyoumedia&quot;,&quot;html_url&quot;:&quot;https://github.com/beyoumedia&quot;},{&quot;id&quot;:5652,&quot;login&quot;:&quot;gsl&quot;,&quot;html_url&quot;:&quot;https://github.com/gsl&quot;},{&quot;id&quot;:5754,&quot;login&quot;:&quot;trix&quot;,&quot;html_url&quot;:&quot;https://github.com/trix&quot;},{&quot;id&quot;:5768,&quot;login&quot;:&quot;acunote&quot;,&quot;html_url&quot;:&quot;https://github.com/acunote&quot;},{&quot;id&quot;:5855,&quot;login&quot;:&quot;trms&quot;,&quot;html_url&quot;:&quot;https://github.com/trms&quot;},{&quot;id&quot;:5875,&quot;login&quot;:&quot;hashrocket&quot;,&quot;html_url&quot;:&quot;https://github.com/hashrocket&quot;},{&quot;id&quot;:5970,&quot;login&quot;:&quot;flogic&quot;,&quot;html_url&quot;:&quot;https://github.com/flogic&quot;},{&quot;id&quot;:5974,&quot;login&quot;:&quot;mpowered&quot;,&quot;html_url&quot;:&quot;https://github.com/mpowered&quot;},{&quot;id&quot;:5985,&quot;login&quot;:&quot;rubypond&quot;,&quot;html_url&quot;:&quot;https://github.com/rubypond&quot;},{&quot;id&quot;:6010,&quot;login&quot;:&quot;SalesLentz&quot;,&quot;html_url&quot;:&quot;https://github.com/SalesLentz&quot;},{&quot;id&quot;:6183,&quot;login&quot;:&quot;thoughtbot&quot;,&quot;html_url&quot;:&quot;https://github.com/thoughtbot&quot;},{&quot;id&quot;:6216,&quot;login&quot;:&quot;sifterapp&quot;,&quot;html_url&quot;:&quot;https://github.com/sifterapp&quot;},{&quot;id&quot;:6219,&quot;login&quot;:&quot;insomniapps&quot;,&quot;html_url&quot;:&quot;https://github.com/insomniapps&quot;},{&quot;id&quot;:6230,&quot;login&quot;:&quot;beyondthepath&quot;,&quot;html_url&quot;:&quot;https://github.com/beyondthepath&quot;},{&quot;id&quot;:6309,&quot;login&quot;:&quot;sanswork&quot;,&quot;html_url&quot;:&quot;https://github.com/sanswork&quot;},{&quot;id&quot;:6370,&quot;login&quot;:&quot;abakas&quot;,&quot;html_url&quot;:&quot;https://github.com/abakas&quot;},{&quot;id&quot;:6423,&quot;login&quot;:&quot;loggly&quot;,&quot;html_url&quot;:&quot;https://github.com/loggly&quot;},{&quot;id&quot;:6458,&quot;login&quot;:&quot;WebKit&quot;,&quot;html_url&quot;:&quot;https://github.com/WebKit&quot;},{&quot;id&quot;:6568,&quot;login&quot;:&quot;notonthehighstreet&quot;,&quot;html_url&quot;:&quot;https://github.com/notonthehighstreet&quot;},{&quot;id&quot;:6585,&quot;login&quot;:&quot;intercom&quot;,&quot;html_url&quot;:&quot;https://github.com/intercom&quot;},{&quot;id&quot;:6727,&quot;login&quot;:&quot;digitalpulp&quot;,&quot;html_url&quot;:&quot;https://github.com/digitalpulp&quot;},{&quot;id&quot;:6769,&quot;login&quot;:&quot;efficiency20&quot;,&quot;html_url&quot;:&quot;https://github.com/efficiency20&quot;},{&quot;id&quot;:6789,&quot;login&quot;:&quot;gnoso&quot;,&quot;html_url&quot;:&quot;https://github.com/gnoso&quot;},{&quot;id&quot;:6799,&quot;login&quot;:&quot;infochimps&quot;,&quot;html_url&quot;:&quot;https://github.com/infochimps&quot;},{&quot;id&quot;:6864,&quot;login&quot;:&quot;citrusbyte&quot;,&quot;html_url&quot;:&quot;https://github.com/citrusbyte&quot;},{&quot;id&quot;:6949,&quot;login&quot;:&quot;kinda&quot;,&quot;html_url&quot;:&quot;https://github.com/kinda&quot;},{&quot;id&quot;:7053,&quot;login&quot;:&quot;Sentia&quot;,&quot;html_url&quot;:&quot;https://github.com/Sentia&quot;},{&quot;id&quot;:7164,&quot;login&quot;:&quot;loudpixel&quot;,&quot;html_url&quot;:&quot;https://github.com/loudpixel&quot;},{&quot;id&quot;:7189,&quot;login&quot;:&quot;omnigroup&quot;,&quot;html_url&quot;:&quot;https://github.com/omnigroup&quot;},{&quot;id&quot;:7239,&quot;login&quot;:&quot;bebanjo&quot;,&quot;html_url&quot;:&quot;https://github.com/bebanjo&quot;},{&quot;id&quot;:7318,&quot;login&quot;:&quot;code&quot;,&quot;html_url&quot;:&quot;https://github.com/code&quot;},{&quot;id&quot;:7337,&quot;login&quot;:&quot;crushlovely&quot;,&quot;html_url&quot;:&quot;https://github.com/crushlovely&quot;},{&quot;id&quot;:7397,&quot;login&quot;:&quot;Flatsourcing&quot;,&quot;html_url&quot;:&quot;https://github.com/Flatsourcing&quot;},{&quot;id&quot;:7412,&quot;login&quot;:&quot;kyan&quot;,&quot;html_url&quot;:&quot;https://github.com/kyan&quot;},{&quot;id&quot;:7448,&quot;login&quot;:&quot;causes&quot;,&quot;html_url&quot;:&quot;https://github.com/causes&quot;},{&quot;id&quot;:7463,&quot;login&quot;:&quot;uversity&quot;,&quot;html_url&quot;:&quot;https://github.com/uversity&quot;},{&quot;id&quot;:7470,&quot;login&quot;:&quot;formrausch&quot;,&quot;html_url&quot;:&quot;https://github.com/formrausch&quot;},{&quot;id&quot;:7550,&quot;login&quot;:&quot;Aissac&quot;,&quot;html_url&quot;:&quot;https://github.com/Aissac&quot;},{&quot;id&quot;:7756,&quot;login&quot;:&quot;animoto&quot;,&quot;html_url&quot;:&quot;https://github.com/animoto&quot;},{&quot;id&quot;:7822,&quot;login&quot;:&quot;generalthings&quot;,&quot;html_url&quot;:&quot;https://github.com/generalthings&quot;},{&quot;id&quot;:7835,&quot;login&quot;:&quot;ctisol&quot;,&quot;html_url&quot;:&quot;https://github.com/ctisol&quot;},{&quot;id&quot;:7991,&quot;login&quot;:&quot;bitsemble&quot;,&quot;html_url&quot;:&quot;https://github.com/bitsemble&quot;},{&quot;id&quot;:8019,&quot;login&quot;:&quot;c7&quot;,&quot;html_url&quot;:&quot;https://github.com/c7&quot;},{&quot;id&quot;:8078,&quot;login&quot;:&quot;mootools&quot;,&quot;html_url&quot;:&quot;https://github.com/mootools&quot;},{&quot;id&quot;:8085,&quot;login&quot;:&quot;Shopify&quot;,&quot;html_url&quot;:&quot;https://github.com/Shopify&quot;}]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match  response[0].login contains 'errfree'</span>
+  
+  <span class="lead-duration duration">014ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

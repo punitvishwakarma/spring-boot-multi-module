@@ -1,0 +1,17 @@
+19:06:38.974 request:
+1 > GET http://localhost:8081/api/v1/git-microservice/zeroFollowers?items=0%2C1%2C3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11)
+
+19:06:40.540 response time in milliseconds: 1559.87
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Sun, 06 Sep 2020 13:36:40 GMT
+1 < Keep-Alive: timeout=60
+1 < Transfer-Encoding: chunked
+1 < Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+[{"id":44,"login":"errfree","html_url":"https://github.com/errfree"},{"id":81,"login":"engineyard","html_url":"https://github.com/engineyard"},{"id":128,"login":"collectiveidea","html_url":"https://github.com/collectiveidea"}]
+

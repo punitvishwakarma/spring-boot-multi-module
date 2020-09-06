@@ -1,0 +1,8 @@
+<testsuite failures="0" name="com/tcs/git/zeroFollowers_success.feature" skipped="0" tests="1" time="2.716244">
+  <testcase classname="com.tcs.git.zeroFollowers_success" name="Checking response 200" time="2.716244">
+    <system-out>Given url microserviceUrl ................................................. passed
+And path '/zeroFollowers' ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,9 @@
+<testsuite failures="0" name="com/tcs/git/zeroFollowers_withOutParam.feature" skipped="0" tests="1" time="2.639581">
+  <testcase classname="com.tcs.git.zeroFollowers_withOutParam" name="Checking response contains array value" time="2.639581">
+    <system-out>Given url microserviceUrl ................................................. passed
+And path '/zeroFollowers' ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* match  response[0].login contains 'errfree' ............................. passed</system-out>
+  </testcase>
+</testsuite>
